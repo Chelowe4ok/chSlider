@@ -30,6 +30,19 @@ include chSlider.js file to your page (if you need ie8 suppor, you will need als
 
 			<script>
 				var slider = new chSlider({ sliderId: 'mySlider' });
+
+				var xhr = new XMLHttpRequest();
+
+				var json = JSON.stringify({
+				  value: slider.getValue()
+				});
+
+				xhr.open("POST", '/submit', true)
+				xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+
+				xhr.onreadystatechange = ...;
+
+				xhr.send(json);
 			</script>
 		</body>
 	</html>
@@ -48,6 +61,7 @@ and launch index.html in your browser
 
 ```javascript
 var options = {
+
             width: '300px',
 			height: '0.2em',
 			sliderId: 'slider',
@@ -65,4 +79,12 @@ var options = {
 } 
 
 var mySlider = new chSlider(options);
+```
+### Methods
+
+```javascript
+	slider.getValue() - return current value;
+	slider.setValue(value) - set current value;
+	slider.getCurrentConfig() - return current configuration of a slider
+	slider.getUIElements() - return object with references to HTML elements (slider, thumb, filling, display)
 ```
