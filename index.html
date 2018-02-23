@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Title -->
+    <title>Login</title>
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <style>
+        body {
+            padding: 25px;
+        }
+
+        #mySlider2 {
+            font-size: 25px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="mySlider" class="slider">
+        <div class="thumb"></div>
+    </div>
+
+    <div id="mySlider2"  class="slider">
+        <div class="thumb"></div>
+    </div>
+
+    <!-- polyfill for ie8 -->
+    <script src="//cdn.polyfill.io/v1/polyfill.js?features=es6"></script>
+    <script src="chSlider.js"></script>
+    <script>
+
+        var slider = new chSlider({ sliderId: 'mySlider' });
+
+        var myChangedFunction = function (value) {
+            console.log('value of slider 2 was changed to : ' + value);
+        }
+
+        var slider2 = new chSlider({
+            width: '25%',
+            height: '0.2em',
+            sliderId: 'mySlider2',
+            sliderColor: 'yellow',
+            fillColor: '#2aa198',
+            thumbClass: 'thumb',
+            thumbRadius: '25px',
+            thumbColor: "#219161",
+            thumbHoverColor: "#33e196",
+            startRange: -50,
+            endRange: 50,
+            step: 2,
+            value: -25,
+            displayValue: true,
+            onchange: myChangedFunction
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "chslider",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "dependencies": {},
+  "dependenciesDev": {},
+  "devDependencies": {
+    "jsdom": "^11.6.2"
+  }
+}
