@@ -1,7 +1,7 @@
 
 ## Free range slider
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![chSlider preview](lib/img/chSlider.jpg)
 
 - [x] IE8+
 - [x] Support touches
@@ -46,4 +46,24 @@ and launch index.html in your browser
 
 ### Options
 
+```javascript
+var options = {
+            width: '25%',
+            height: '0.2em',
+            sliderId: 'mySlider2',
+            sliderColor: 'yellow',
+            fillColor: '#2aa198',
+            thumbClass: 'thumb',
+            thumbRadius: '25px',
+            thumbColor: "#219161",
+            thumbHoverColor: "#33e196",
+            startRange: -50,
+            endRange: 50,
+            step: 2,
+            value: -25,
+            displayValue: true,
+            onchange: myChangedFunction
+} 
 
+var mySlider = new chSlider(options);
+```
