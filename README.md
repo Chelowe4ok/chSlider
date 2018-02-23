@@ -15,14 +15,14 @@ include chSlider.js file to your page (if you need ie8 suppor, you will need als
 	<!DOCTYPE html>
 	<html lang="en">
 		<head>
-			<!-- your code -->
+			...
 		</head>
 		<body>
-			<!-- your code -->
+			...
 			<div id="mySlider" class="slider">
 				<div class="thumb"></div>
 			</div>
-			<!-- also your code -->
+			...
 
 			<!-- polyfill for ie8 -->
 			<script src="//cdn.polyfill.io/v1/polyfill.js?features=es6"></script>
@@ -48,21 +48,20 @@ and launch index.html in your browser
 
 ```javascript
 var options = {
-            width: '25%',
-            height: '0.2em',
-            sliderId: 'mySlider2',
-            sliderColor: 'yellow',
-            fillColor: '#2aa198',
-            thumbClass: 'thumb',
-            thumbRadius: '25px',
-            thumbColor: "#219161",
-            thumbHoverColor: "#33e196",
-            startRange: -50,
-            endRange: 50,
-            step: 2,
-            value: -25,
-            displayValue: true,
-            onchange: myChangedFunction
+            width: '300px',
+			height: '0.2em',
+			sliderId: 'slider',
+			sliderColor: '#E0E0E0',
+			fillColor: '#617ba2',
+			thumbClass: 'thumb', thumbRadius: '25px',
+			thumbColor: "#617ba2",
+			thumbHoverColor: "#617ba2",
+			startRange: 0,
+			endRange: 100,
+			step: 1,
+			value: 0,
+			displayValue: true,
+			onchange: function (value) { }
 } 
 
 var mySlider = new chSlider(options);
