@@ -15,17 +15,13 @@ include chSlider.js file to your page (if you need ie8 suppor, you will need als
 	<!DOCTYPE html>
 	<html lang="en">
 		<head>
-
 			<!-- your code -->
-
 		</head>
 		<body>
 			<!-- your code -->
-
 			<div id="mySlider" class="slider">
 				<div class="thumb"></div>
 			</div>
-
 			<!-- also your code -->
 
 			<!-- polyfill for ie8 -->
